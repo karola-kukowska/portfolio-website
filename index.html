@@ -74,32 +74,45 @@
 </head>
 
 <body class="bg-fixed text-white parallax">
-    <nav class="border border-white border-t-0 border-r-0 border-l-0 border-b-2">
-        <div class="container mx-auto flex justify-between items-center p-6">
-            <a href="#" class="text-3xl font-bold text-[#A17939] uppercase">
-                <img src="img/logo.png" alt="KAROLA _DEV" class="max-h-14">
-            </a>
-            <button id="menu-toggle" class="md:hidden">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div id="nav-links" class="hidden md:flex space-x-8 text-lg items-center md:flex-row">
-                <a href="#about" class="hover:text-gray-400 uppercase p-4">About</a>
-                <a href="#projects" class="hover:text-gray-400 uppercase p-4">Projects</a>
-                <a href="#contact" class="hover:text-gray-400 uppercase p-4">Contact</a>
-                <a href="https://github.com/karola-kukowska" target="_blank" class="hover:text-gray-400 p-4"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/karola-kukowska/" target="_blank"
-                    class="hover:text-gray-400 p-4"><i class="fab fa-linkedin"></i></a>
+    <nav class="">
+        <div class="border border-white border-t-0 border-r-0 border-l-0 border-b-2">
+            <div class="container mx-auto flex justify-between items-center p-6 ">
+                <a href="#" class="text-3xl font-bold text-[#A17939] uppercase">
+                    <img src="img/logo.png" alt="KAROLA _DEV" class="max-h-14">
+                </a>
+                <button id="menu-toggle" class="md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div id="nav-links" class="hidden md:flex space-x-8 text-lg items-center md:flex-row">
+                    <a href="#about"
+                        class="transition duration-300 ease-in-out hover:text-gray-400 uppercase p-4">About</a>
+                    <a href="#projects"
+                        class="transition duration-300 ease-in-out hover:text-gray-400 uppercase p-4">Projects</a>
+                    <a href="#contact"
+                        class="transition duration-300 ease-in-out hover:text-gray-400 uppercase p-4 ">Contact</a>
+                    <div>
+
+                        <a href="https://github.com/karola-kukowska" target="_blank"
+                            class="transition duration-300 ease-in-out hover:text-gray-400 hover:-translate-y-1 scale-125 p-4"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/karola-kukowska/" target="_blank"
+                            class="transition duration-300 ease-in-out hover:text-gray-400 hover:-translate-y-1 scale-125 p-4"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="nav-links-mobile" class="hidden flex-col bg-gray-800 w-full transition">
+        <div id="nav-links-mobile"
+            class="hidden flex-col bg-gray-800 bg-opacity-40 w-full transition duration-300 ease-in-out pb-2">
             <a href=" #about" class="hover:text-gray-400 uppercase p-4">About</a>
             <a href="#projects" class="hover:text-gray-400 uppercase p-4">Projects</a>
             <a href="#contact" class="hover:text-gray-400 uppercase p-4">Contact</a>
-            <a href="https://github.com/karola-kukowska" target="_blank" class="hover:text-gray-400 p-4"><i
-                    class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/karola-kukowska/" target="_blank" class="hover:text-gray-400 p-4"><i
-                    class="fab fa-linkedin"></i></a>
+            <div class="flex justify-start gap-2 pl-3">
+                <a href="https://github.com/karola-kukowska" target="_blank" class="hover:text-gray-400 p-1"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/karola-kukowska/" target="_blank"
+                    class="hover:text-gray-400 p-1"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </nav>
 
@@ -155,24 +168,26 @@
         <h2 class="text-4xl font-bold text-center text-white uppercase">Get in Touch</h2>
         <!-- <p class="mt-6 text-center text-lg">You've got something in mind? Let's get talking!</p> -->
         <p class="mt-6 text-center text-lg">Let's make the web a little more awesome.</p>
-        <form class="max-w-lg mx-auto mt-10 border border-white border-4 p-10">
+        <form action="https://formsubmit.co/karolina.kukowska@gmail.com" method="POST"
+            class="max-w-lg mx-auto mt-10 border border-white border-4 p-10">
             <div class="mb-6">
                 <label for="name" class="block text-sm font-medium uppercase mb-2">Name</label>
-                <input type="text" id="name" name="name" class="w-full p-3 border  bg-gray-800 text-white"
+                <input type="text" id="name" name="name" class="w-full p-3 border bg-gray-800 bg-opacity-40 text-white"
                     placeholder="Your Name" required>
             </div>
             <div class="mb-6">
                 <label for="email" class="block text-sm font-medium uppercase mb-2">Email</label>
-                <input type="email" id="email" name="email" class="w-full p-3 border  bg-gray-800 text-white"
-                    placeholder="Your Email" required>
+                <input type="email" id="email" name="email"
+                    class="w-full p-3 border bg-gray-800 bg-opacity-40 text-white" placeholder="Your Email" required>
             </div>
             <div class="mb-6">
                 <label for="message" class="block text-sm font-medium uppercase mb-2">Message</label>
-                <textarea id="message" name="message" rows="4" class="w-full p-3 border  bg-gray-800 text-white"
-                    placeholder="Your Message" required></textarea>
+                <textarea id="message" name="message" rows="4"
+                    class="w-full p-3 border bg-gray-800 bg-opacity-40 text-white" placeholder="Your Message"
+                    required></textarea>
             </div>
             <button type="submit"
-                class="p-4 border border-white text-white uppercase transition-colors duration-300 hover:bg-bg-gray-800">Send
+                class="mx-auto block p-4 border border-white text-white uppercase transition-colors duration-300 hover:bg-gray-800">Send
                 Message</button>
         </form>
     </section>
