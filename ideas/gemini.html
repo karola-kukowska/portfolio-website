@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karola Dev Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        <style>body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: linear-gradient(to right bottom, #39114c, #2b1648, #1e1841, #151939, #0f1830, #161831, #1c1932, #221932, #381837, #4f1533, #611429, #6d1c18);
+            /* Full height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-fixed text-white font-sans parallax">
+    <nav class="bg-black shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="#" class="text-2xl font-bold text-[#A17939]">Karola Dev</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="text-center py-20">
+        <h1 class="text-5xl font-extrabold">Hi, I'm Karola!</h1>
+        <p class="mt-4 text-lg">Front-End Developer passionate about creating interactive web experiences.</p>
+    </section>
+
+    <section id="about" class="container mx-auto py-20 text-center">
+        <h2 class="text-3xl font-bold text-white">About Me</h2>
+        <div class="mt-8 flex flex-col items-center">
+            <img src="img/me.webp" alt="Karola's Picture"
+                class="border-white border-5 p-2 rounded-3xl shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <p class="mt-4 max-w-2xl border border-white p-2">I’m a front-end developer who loves building intuitive and
+                beautiful user
+                interfaces. I focus on creating performant, accessible, and delightful digital experiences.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-white">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <div class="border border-white p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold text-white">Project One</h3>
+                    <p class="mt-2">A cool project description goes here.</p>
+                </div>
+                <div class="border border-white p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold text-white">Project Two</h3>
+                    <p class="mt-2">Another awesome project description.</p>
+                </div>
+                <div class="border border-white p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold text-white">Project Three</h3>
+                    <p class="mt-2">Yet another amazing project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mx-auto py-20">
+        <h2 class="text-3xl font-bold text-center text-white">Get in Touch</h2>
+        <p class="mt-4 text-center">Interested in working together? Let’s connect!</p>
+        <form class="max-w-lg mx-auto mt-8 border border-white p-8 rounded-lg">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium">Name</label>
+                <input type="text" id="name" name="name" class="w-full p-2 border rounded-lg bg-gray-800 text-white"
+                    placeholder="Your Name" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium">Email</label>
+                <input type="email" id="email" name="email" class="w-full p-2 border rounded-lg bg-gray-800 text-white"
+                    placeholder="Your Email" required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-medium">Message</label>
+                <textarea id="message" name="message" rows="4"
+                    class="w-full p-2 border rounded-lg bg-gray-800 text-white" placeholder="Your Message"
+                    required></textarea>
+            </div>
+            <button type="submit"
+                class="w-full bg-[#A17939] p-3 rounded-lg text-white transition-colors duration-300 hover:bg-[#8A6230]">Send
+                Message</button>
+        </form>
+    </section>
+
+    <footer class="bg-black text-center py-4">
+        <p>&copy; 2025 Karola Dev. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
